@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="killpageStyling.css">
+    <title>I regret this</title>
+    <script src="killpageScript.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="koPerParScript.js"></script>
+</head>
+
+<body>
+    <div class="menubar">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <a href="homePage.html">
+            <div class="logo">
+                <img src="images/Smantlogo.png" alt="failed to load image">
+                <p>Run&Bun attempt 1</p>
+            </div>
+        </a>
+        <div class="promotion">
+            <h3>By: RoelofLucka</h3>
+        </div>
+    </div>
+    <div class="outsideContainer">
+        <div class="leftSide">
+            <a href="homePage.html">
+                <div class="leftSideBox">
+                    <h2>Home</h2>
+                </div>
+            </a>
+            <a href="infoPage.html">
+                <div class="leftSideBox">
+                    <h2>info</h2>
+                </div>
+            </a>
+            <a href="dataPage.html">
+                <div class="leftSideBox">
+                    <h2>Data</h2>
+                </div>
+            </a>
+            <hr>
+            <a href="killsPage.html">
+                <div class="leftSideBox current">
+                    <h2>kills</h2>
+                </div>
+            </a>
+            <a href="participationPage.html">
+                <div class="leftSideBox">
+                    <h2>Participations</h2>
+                </div>
+            </a>
+            <div class="leftSideBox">
+                <h2>Coming soon</h2>
+            </div>
+            <hr>
+            <a href="SettingsPage.html">
+                <div class="leftSideBox">
+                    <h2>Settings</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="contentRow">
+            <div class="contentOrder">
+                <div class="secondBar">
+                    <h2>Current Split:</h2>
+                </div>
+                <div class="secondBar">
+                    <h2 id="curSplit">All</h2>
+                </div>
+                <div class="secondBar">
+                    <button onclick="switchSplit(0,'All')">Enable All</button>
+                </div>
+                <div class="secondBar">
+                    <button onclick="switchSplit(1,'Brawly Split')">Brawly Split</button>
+                </div>
+                <div class="secondBar">
+                    <button onclick="switchSplit(2,'Roxanne Split')">Roxanne Split</button>
+                </div>
+                <div class="secondBar">
+                    <button onclick="switchSplit(3,'Wattson Split')">Wattson Split</button>
+                </div>
+                <div class="secondBar">
+                    <button onclick="switchSplit(4,'Norman Split')">Norman Split</button>
+                </div>
+                <div class="secondBar">
+                    <button onclick="switchSplit(5,'Flannery Split')">Flannery Split</button>
+                </div>
+                <div class="secondBar">
+                    <button onclick="switchSplit(6,'Winona Split')">Winona Split</button>
+                </div>
+                <div class="secondBar">
+                    <button onclick="switchSplit(7,'Tate & Liza Split')">Tate & Liza Split</button>
+                </div>
+                <div class="secondBar">
+                    <button onclick="switchSplit(8,'Juan Split')">Juan Split</button>
+                </div>
+                <div class="secondBar">
+                    <button onclick="switchSplit(9,'Victory Road Split')">Victory Road Split</button>
+                </div>
+                <div class="secondBar">
+                    <button onclick="switchSplit(10,'Pokemon League')">Pokemon League</button>
+                </div>
+            </div>
+            <div>
+                <button id="change-chart">Change to Classic</button>
+                <br><br>
+                <div id="chart_div" style="width: 800px; height: 500px;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

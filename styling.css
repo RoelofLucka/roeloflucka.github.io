@@ -1,0 +1,156 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-y: scroll; /* Show vertical scrollbar */
+    margin: 0;
+    padding: 0;
+    background-color: #000031
+}
+
+h1{
+    color: white;
+}
+
+.leftSideBox:hover {
+    background-color: grey;
+    border-radius: 25px;
+}
+
+.current{
+    background-color: grey;
+    border-radius: 25px;
+}
+
+.menubar{
+    border-bottom: solid;
+    width: 99.1vw;
+    border-style: bottom;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.outsideContainer{
+    /* border-style: dotted; */
+    width: 99.1vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #000031;
+    min-height: calc(100vh-56px);
+}
+
+.leftSide{
+    border-right: solid;
+    border-left-style: none;
+    border-bottom-style: none;
+    min-width: 20vh;
+    min-height: calc(100vh - 59px);
+    background-color: #000031;
+}
+
+.minimenu{
+    height:56px;
+    padding:10px;
+}
+
+.content{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h2, p, h3{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.content > div{
+    background-color: Black;
+    width: 313px;
+    height: 176px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.subContent{
+    background-color: Black;
+    width: 313px;
+    height: 176px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+
+.leftSideBox{
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    margin:50px;
+    padding: 7px;
+}
+  
+.contentLink{
+    height: 100%;
+    margin: 0;
+    
+}
+
+.container:hover {
+    background-color: grey;
+    border-radius: 7px;
+}
+
+  .bar{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+
+  }
+  
+.logo{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+img {
+    width: 56px;
+    height: auto;
+}
+
+.promotion{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding-right: 10px;
+}

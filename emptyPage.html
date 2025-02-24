@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styling.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', { packages: ['corechart'] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Pokemon');
+        data.addColumn('number', 'Sales');
+        data.addColumn({ type: 'string', role: 'annotation' });
+        
+        data.addRows([
+          ['Turtwig', 6, '6'],
+          ['Budew', 6, '6'],
+          ['Pidgey', 4, '4'],
+          ['Poochyena', 2, '2'],
+          ['Surskit', 3, '3'],
+          ['Ponyta', 9, '9'],
+          ['Sizzlipede', 2, '2'],
+          ['Grotle', 20, '20'],
+          ['Roselia', 12, '12'],
+          ['Horsea', 1, '1'],
+          ['Corphish', 6, '6'],
+          ['Timburr', 4, '4'],
+          ['Pidgeotto', 4, '4'],
+          ['Chewtle', 2, '2'],
+          ['Qwilfish', 22, '22'],
+          ['Luxio', 7, '7'],
+          ['Luxray', 19, '19'],
+          ['Masquerain', 5, '5'],
+          ['Sandile', 2, '2'],
+          ['Centiskorch', 5, '5'],
+          ['Drednaw', 25, '25'],
+          ['Mightyena', 5, '5'],
+          ['Hitmonlee', 29, '29'],
+          ['Rapidash', 37, '37'],
+          ['Crawdaunt', 11, '11'],
+          ['Pidgeot', 16, '16'],
+          ['Meganium', 11, '11'],
+          ['Togedemaru', 45, '45'],
+          ['Torterra', 56, '56'],
+          ['piloswine', 3, '3'],
+          ['Roserade', 10, '10'],
+          ['Mamoswine', 5, '5'],
+          ['Krookodile', 16, '16'],
+          ['Cloyster', 20, '20'],
+          ['Torkoal', 15, '15'],
+          ['Kingdra', 3, '3'],
+          ['Chowder', 1, '1'],
+          ['Conkeldurr', 25, '25'],
+          ['Escavalier', 16, '16'],
+          ['Copperajah', 2, '2'],
+          ['Rimbombee', 5, '5'],
+          ['Skuntank', 8, '8'],
+          ['Electricity', 1, '1'],
+          ['Archeops', 34, '34'],
+          ['Toxtricity', 7, '7'],
+          ['Flygon', 11, '11'],
+          ['Gyarados', 20, '20'],
+          ['Arcanine', 13, '13'],
+          ['Electrode', 5, '5'],
+          ['Greninja', 3, '3'],
+          ['Dhelmise', 3, '3'],
+          ['Kangashkan', 1, '1'],
+          ['Donphan', 27, '27'],
+          ['Dumpling', 1, '1'],
+          ['Wyrdeer', 1, '1'],
+          ['Magmortar', 2, '2'],
+          ['Muk', 1, '1'],
+          ['Corviknight', 1, '1']
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          chartArea: { top: 0, height: '90%', left: '10%', width: '80%' },
+          hAxis: { textPosition: 'none' },
+          annotations: {
+            alwaysOutside: true,
+            textStyle: {
+              fontSize: 12,
+              color: '#000'
+            }
+          },
+          bar: { groupWidth: '75%' },
+          legend: { position: 'none' }
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('barchart_material'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="outsideContainer">
+      <div class="leftSide">
+        <div class="leftSideBox">
+          <a href="secondpage.html">Dont press me</a>
+        </div>
+        <div class="leftSideBox">
+          <h2>hi</h2>
+        </div>
+        <div class="leftSideBox">
+          <h1>Smallant Run&Bun attempt 1</h1>
+        </div>
+      </div>
+      <div class="rightSide" style="overflow-y:scroll;">
+        <div id="barchart_material" style="width: 900px; height: 1500px;"></div>
+      </div>
+    </div>
+  </body>
+</html>
