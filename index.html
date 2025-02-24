@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <title>I regret this</title>
+    <script>
+        function myFunction(x) {
+
+            // Toggle the visibility of the leftSide div
+            let leftSide = document.querySelector(".leftSide");
+            if (leftSide.style.display === "none") {
+                leftSide.style.display = "block"; // Show the menu
+            } else {
+                leftSide.style.display = "none"; // Hide the menu
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="menubar">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <a href="homePage.html">
+            <div class="logo">
+                <img src="images/Smantlogo.png" alt="failed to load image">
+                <p>Run&Bun attempt 1</p>
+            </div>
+        </a>
+        <div class="promotion">
+            <h3>By: RoelofLucka</h3>
+        </div>
+    </div>
+    <div class="outsideContainer">
+        <div class="leftSide">
+            <a href="homePage.html">
+                <div class="leftSideBox current">
+                    <h2>Home</h2>
+                </div>
+            </a>
+            <a href="infoPage.html">
+                <div class="leftSideBox">
+                    <h2>info</h2>
+                </div>
+            </a>
+            <a href="dataPage.html">
+                <div class="leftSideBox">
+                    <h2>Data</h2>
+                </div>
+            </a>
+            <hr>
+            <a href="killsPage.html">
+                <div class="leftSideBox">
+                    <h2>kills</h2>
+                </div>
+            </a>
+            <a href="participationPage.html">
+                <div class="leftSideBox">
+                    <h2>Participations</h2>
+                </div>
+            </a>
+            <div class="leftSideBox">
+                <h2>Coming soon</h2>
+            </div>
+            <hr>
+            <a href="SettingsPage.html">
+                <div class="leftSideBox">
+                    <h2>Settings</h2>
+                </div>
+            </a>
+        </div>
+        <div>
+            <div class="minimenu">
+            </div>
+            <div class="content">
+                <div class="subContent">
+                    <a href="killsPage.html">
+                        <h2 class="contentLink">Kills</h2>
+                    </a>
+                </div>
+                <div class="subContent">
+                    <a href="killsPage.html">
+                        <h2 class="contentLink">Participations</h2>
+                    </a>
+                </div>
+                <div class="subContent">
+                    <a href="killsPage.html">
+                        <h2 class="contentLink">hi</h2>
+                    </a>
+                </div>
+                <div class="subContent">
+                    <a href="killsPage.html">
+                        <h2 class="contentLink">hi</h2>
+                    </a>
+                </div>
+                <div class="subContent">
+                    <a href="killsPage.html">
+                        <h2 class="contentLink">hi</h2>
+                    </a>
+                </div>
+                <div class="subContent">
+                    <a href="killsPage.html">
+                        <h2 class="contentLink">hi</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
