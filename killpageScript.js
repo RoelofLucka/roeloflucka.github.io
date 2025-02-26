@@ -26,7 +26,11 @@ let myVideos = [
     'video/fragGraph3.mp4',
     'video/fragGraph4.mp4',
     'video/fragGraph5.mp4',
-    'video/fragGraph6.mp4'
+    'video/fragGraph6.mp4',
+    'video/fragGraph7.mp4',
+    'video/fragGraph8.mp4',
+    'video/fragGraph9.mp4',
+    'video/fragGraph10.mp4'
 ]
 
 
@@ -43,7 +47,11 @@ let myVideos2 = [
   'video/participationGraph3.mp4',
   'video/participationGraph4.mp4',
   'video/participationGraph5.mp4',
-  'video/participationGraph6.mp4'
+  'video/participationGraph6.mp4',
+  'video/participationGraph7.mp4',
+  'video/participationGraph8.mp4',
+  'video/participationGraph9.mp4',
+  'video/participationGraph10.mp4'
 ]
 
 

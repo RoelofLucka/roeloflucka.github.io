@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styling.css">
+  <link rel="stylesheet" href="killpageStyling.css">
+  <link rel="stylesheet" href="timeGraph.css">
+  <title>I regret this</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+
+<body>
+  <div class="menubar">
+    <div class="container">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <a href="index.html">
+      <div class="logo">
+        <img src="images/Smantlogo.png" alt="failed to load image">
+        <p>Run&Bun attempt 1</p>
+      </div>
+    </a>
+    <div class="promotion">
+      <h3>Last update: 26-2-2025</h3>
+    </div>
+    <div class="promotion">
+      <h3>By: RoelofLucka</h3>
+    </div>
+  </div>
+  <div class="outsideContainer">
+    <div class="leftSide">
+      <a href="index.html">
+        <div class="leftSideBox current">
+          <h2>Home</h2>
+        </div>
+      </a>
+      <a href="#">
+        <div class="leftSideBox">
+          <h2>Info</h2>
+        </div>
+      </a>
+      <a href="#">
+        <div class="leftSideBox">
+          <h2>Data</h2>
+        </div>
+      </a>
+      <hr>
+      <a href="killsPage.html">
+        <div class="leftSideBox">
+          <h2>Kills animation</h2>
+        </div>
+      </a>
+      <a href="participationPage.html">
+        <div class="leftSideBox">
+          <h2>Participations</h2>
+        </div>
+      </a>
+      <div class="leftSideBox">
+        <h2>Coming soon</h2>
+      </div>
+      <hr>
+      <a href="timegraph.html">
+        <div class="leftSideBox">
+          <h2>Time Graph</h2>
+        </div>
+      </a>
+      <a href="koPerParticipationGraph.html">
+        <div class="leftSideBox">
+          <h2>KO Rate</h2>
+        </div>
+      </a>
+      <div class="leftSideBox">
+        <h2>Coming soon</h2>
+      </div>
+      <hr>
+    </div>
+    <div class="contentRow">
+      <div class="contentOrder">
+        <div class="secondBar">
+          <h2>Current Split:</h2>
+        </div>
+        <div class="secondBar">
+          <h2 id="curSplit">All</h2>
+        </div>
+        <div class="secondBar">
+          <button onclick="switchSplit3(0,'All')">Enable All</button>
+        </div>
+        <div class="secondBar">
+          <button onclick="switchSplit3(1,'Brawly Split')">Brawly Split</button>
+        </div>
+        <div class="secondBar">
+          <button onclick="switchSplit3(2,'Roxanne Split')">Roxanne Split</button>
+        </div>
+        <div class="secondBar">
+          <button onclick="switchSplit3(3,'Wattson Split')">Wattson Split</button>
+        </div>
+        <div class="secondBar">
+          <button onclick="switchSplit3(4,'Norman Split')">Norman Split</button>
+        </div>
+        <div class="secondBar">
+          <button onclick="switchSplit3(5,'Flannery Split')">Flannery Split</button>
+        </div>
+        <div class="secondBar">
+          <button onclick="switchSplit3(6,'Winona Split')">Winona Split</button>
+        </div>
+        <div class="secondBar">
+          <button onclick="switchSplit3(7,'Tate & Liza Split')">Tate & Liza Split</button>
+        </div>
+        <div class="secondBar">
+          <button onclick="switchSplit3(8,'Juan Split')">Juan Split</button>
+        </div>
+        <div class="secondBar">
+          <button onclick="switchSplit3(9,'Victory Road Split')">Victory Road Split</button>
+        </div>
+        <div class="secondBar">
+          <button onclick="switchSplit3(10,'Pokemon League')">Pokemon League</button>
+        </div>
+      </div>
+
+      <div class="timeGraph">
+
+        <div id="myPlot2" class="graph" style="width:100%;max-width:700px"></div>
+
+
+
+        <div id="myPlot" class="graph" style="width:100%;max-width:700px"></div>
+        <script src="TimeScript.js"></script>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

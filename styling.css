@@ -41,7 +41,7 @@ h1{
     display: flex;
     flex-direction: row;
     background-color: #000031;
-    min-height: calc(100vh-56px);
+    min-height: calc(100vh - 59px);
 }
 
 .leftSide{
@@ -60,7 +60,7 @@ h1{
 
 .content{
     height: auto;
-    width: 100%;
+    width: calc(99vw - 20vh - 1px);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -85,22 +85,17 @@ hr {
 
 .content > div{
     background-color: Black;
-    width: 313px;
+    width: 18%;
     height: 176px;
-    margin: 10px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
 }
 
 .subContent{
     background-color: Black;
-    width: 313px;
-    height: 176px;
     margin: 10px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+
+
 }
 
 

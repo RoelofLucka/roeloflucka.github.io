@@ -5,51 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styling.css">
-    <title>I regret this</title>
-    <script>
-        function myFunction(x) {
-
-            // Toggle the visibility of the leftSide div
-            let leftSide = document.querySelector(".leftSide");
-            if (leftSide.style.display === "none") {
-                leftSide.style.display = "block"; // Show the menu
-            } else {
-                leftSide.style.display = "none"; // Hide the menu
-            }
-        }
-    </script>
+    <title>Homepage</title>
 </head>
 
 <body>
     <div class="menubar">
-        <div class="container" onclick="myFunction(this)">
+        <div class="container">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-        <a href="homePage.html">
+        <a href="index.html">
             <div class="logo">
                 <img src="images/Smantlogo.png" alt="failed to load image">
                 <p>Run&Bun attempt 1</p>
             </div>
         </a>
         <div class="promotion">
+            <h3>Last update: 26-2-2025</h3>
+        </div>
+        <div class="promotion">
             <h3>By: RoelofLucka</h3>
         </div>
     </div>
     <div class="outsideContainer">
         <div class="leftSide">
-            <a href="homePage.html">
+            <a href="index.html">
                 <div class="leftSideBox current">
                     <h2>Home</h2>
                 </div>
             </a>
-            <a href="infoPage.html">
+            <a href="#">
                 <div class="leftSideBox">
-                    <h2>info</h2>
+                    <h2>Info</h2>
                 </div>
             </a>
-            <a href="dataPage.html">
+            <a href="#">
                 <div class="leftSideBox">
                     <h2>Data</h2>
                 </div>
@@ -57,7 +48,7 @@
             <hr>
             <a href="killsPage.html">
                 <div class="leftSideBox">
-                    <h2>kills</h2>
+                    <h2>Kills animation</h2>
                 </div>
             </a>
             <a href="participationPage.html">
@@ -69,11 +60,20 @@
                 <h2>Coming soon</h2>
             </div>
             <hr>
-            <a href="SettingsPage.html">
+            <a href="timegraph.html">
                 <div class="leftSideBox">
-                    <h2>Settings</h2>
+                    <h2>Time Graph</h2>
                 </div>
             </a>
+            <a href="koPerParticipationGraph.html">
+                <div class="leftSideBox">
+                    <h2>KO Rate</h2>
+                </div>
+            </a>
+            <div class="leftSideBox">
+                <h2>Coming soon</h2>
+            </div>
+            <hr>
         </div>
         <div>
             <div class="minimenu">
@@ -81,32 +81,46 @@
             <div class="content">
                 <div class="subContent">
                     <a href="killsPage.html">
+                        <h2>Animation:</h2>
                         <h2 class="contentLink">Kills</h2>
                     </a>
                 </div>
                 <div class="subContent">
-                    <a href="killsPage.html">
+                    <a href="#">
+                        <h2>Animation:</h2>
                         <h2 class="contentLink">Participations</h2>
                     </a>
                 </div>
                 <div class="subContent">
                     <a href="killsPage.html">
-                        <h2 class="contentLink">hi</h2>
+                        <h2>Work in progress: V3<h2>
+                        <h2 class="contentLink"><progress></progress></h2>
                     </a>
                 </div>
                 <div class="subContent">
                     <a href="killsPage.html">
-                        <h2 class="contentLink">hi</h2>
+                        <h2>Graph:</h2>
+                        <h2 class="contentLink">Ko per participation</h2>
                     </a>
                 </div>
                 <div class="subContent">
                     <a href="killsPage.html">
-                        <h2 class="contentLink">hi</h2>
+                        <h2>Graph:</h2>
+                        <h2 class="contentLink">Time spend</h2>
                     </a>
                 </div>
                 <div class="subContent">
                     <a href="killsPage.html">
-                        <h2 class="contentLink">hi</h2>
+                        <h2>Future plans:</h2>
+                        <h2 class="">Doubles</h2>
+                        <h2 class="contentLink">BenchWarmers</h2>
+                    </a>
+                </div>
+                <div class="subContent">
+                    <a href="killsPage.html">
+                        <h2>Future plans:</h2>
+                        <h2>First ko / First participation</h2>
+                        <h2>per fight</h2>
                     </a>
                 </div>
             </div>
